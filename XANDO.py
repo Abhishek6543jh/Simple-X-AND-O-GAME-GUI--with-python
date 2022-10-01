@@ -154,14 +154,17 @@ def poupwin():
   
     global top  
     top= Toplevel(window)
-    top.geometry("240x140")
+    top.geometry("380x140")
     lable3=Label(top,text="Enter X or O")
     lable3.pack()
     global entry
     entry= Entry(top, width= 25)
     entry.pack()
     ibtn=Button(top,text="close",command=close)
-    ibtn.pack() 
+    ibtn.pack()
+    lable3=Label(top,text="AFTER ENTERING CLICK ON A DESIRED BOX TO INSERT VALUE IN IT")
+    lable3.pack() 
+    
     ##
 
 #event function for closing popup window
