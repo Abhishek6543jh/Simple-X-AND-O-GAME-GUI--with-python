@@ -1,21 +1,11 @@
 #A small code by abhishek(just a simple X and O game)
 #thank you for having a glance at it
-from ast import Delete, main
-from cProfile import label
-from glob import glob
-from html.entities import name2codepoint
-from pickle import FRAME
-from re import T
-from sqlite3 import Row
 from tkinter import *
 from tkinter import colorchooser
 from tkinter import commondialog
 from tkinter import messagebox
 from tkinter.font import BOLD
-from tkinter.tix import COLUMN, ROW
-from tracemalloc import start
-from turtle import bgcolor, left
-from unicodedata import name
+
 
 #to get opponet names
 def get_opo_names():
@@ -90,7 +80,6 @@ def guistart():
     frame2 = Frame(window,padx=20,pady=20)
     frame2.pack()
 
-
 #label for title 
     labeT = Label(frame0,text="X AND O GAME",font=("Simplifica"),bg="#adedd7")
     frame1.pack()
@@ -109,7 +98,7 @@ def guistart():
     global entry_2
     entry_2 = Entry(frame2)
     entry_2.grid(row=4,column=0)
-#######
+
 
 ##creating a button for start
     btstrt = Button(frame2,text='START',font=("JerseyM54Font"),bg="#55faa5",command=start)
@@ -162,9 +151,8 @@ def poupwin():
     entry.pack()
     ibtn=Button(top,text="close",command=close)
     ibtn.pack()
-    lable3=Label(top,text="AFTER ENTERING CLICK ON A DESIRED BOX TO INSERT VALUE IN IT")
-    lable3.pack() 
-    
+    lable4=Label(top,text="AFTER ENTERING CLICK ON A DESIRED BOX TO INSERT VALUE IN IT")
+    lable4.pack() 
     ##
 
 #event function for closing popup window
@@ -174,47 +162,48 @@ def close():
 #creating 9 click functions for 9 buttons
 def click1():
     ipt =entry.get()
-    bt1['text']=ipt
+    bt1['text']=ipt.upper()
     close()
     showwin()
 def click2():
     ipt=entry.get()
-    bt2['text']=ipt
+
+    bt2['text']=ipt.upper()
     close()
     showwin()
 def click3():
     ipt=entry.get()
-    bt3['text']=ipt
+    bt3['text']=ipt.upper()
     close()
     showwin()
 def click4():
     ipt=entry.get()
-    bt4['text']=ipt
+    bt4['text']=ipt.upper()
     close()
     showwin()
 def click5():
     ipt=entry.get()
-    bt5['text']=ipt
+    bt5['text']=ipt.upper()
     close()
     showwin()
 def click6():
     ipt=entry.get()
-    bt6['text']=ipt
+    bt6['text']=ipt.upper()
     close()
     showwin()
 def click7():
     ipt=entry.get()
-    bt7['text']=ipt
+    bt7['text']=ipt.upper()
     close()
     showwin()
 def click8():
     ipt=entry.get()
-    bt8['text']=ipt
+    bt8['text']=ipt.upper()
     close()
     showwin()
 def click9():
     ipt=entry.get()
-    bt9['text']=ipt
+    bt9['text']=ipt.upper()
     close()
     showwin()
 
